@@ -145,20 +145,20 @@
             };
         
             function mostrarElementos() {
-                // Obtener la posición actual del scroll
-                let scrollPosition = window.scrollY || document.documentElement.scrollTop;
+                // Detecta si el usuario esta haciendo scroll o esta arriba de la pagina
+                let scrollPosition = window.scrollY || document.documentElement.scrollTop; 
         
                 // Definir los elementos
                 let footer = document.querySelector('footer');
                 let marcas = document.getElementById('marcas');
         
                 // Si el usuario ha hecho scroll hacia abajo, mostrar los elementos
-                if (scrollPosition > 100) {  // Ajusta el valor según tus necesidades
+                if (scrollPosition > 100) {  // si el scroll ha superado los 100px
                     footer.style.bottom = "0";
                     marcas.style.bottom = "0";
                 } else {
-                    footer.style.bottom = "-125px";  // Ocultar los elementos
-                    marcas.style.bottom = "-125px";  // Ocultar los elementos
+                    footer.style.bottom = "-100px";  // Ocultar los elementos
+                    marcas.style.bottom = "-100px";  // Ocultar los elementos
                 }
             }
         </script>

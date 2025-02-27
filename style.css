@@ -30,6 +30,7 @@
     #marcas, footer {
         font-size: 14px;
     }
+}
 
 @media (max-width: 480px) {
     body {
@@ -43,7 +44,7 @@
 
 
 
-}
+
 
 
 /* Estilos generales */
