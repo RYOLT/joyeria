@@ -84,6 +84,7 @@ nav ul li a {
     height: auto;
     margin: 20px;
     border-radius: 15px;
+    margin-bottom: 150px;
 
 }
 
@@ -110,6 +111,7 @@ h3 {
 section {
     margin-bottom: 40px;
     text-align: center;
+    
 }
 
 .producto {
@@ -155,10 +157,11 @@ section {
     justify-content: center;
     flex-wrap: nowrap;
     position: fixed;
-    bottom: 0;
+    bottom: -125px;
     margin-bottom: 50px;
     background-color: rgba(255, 255, 255, 0.6);
     width: 100%;
+    transition: bottom 0.5s ease-in-out;
 }
 
 .marca img {
@@ -178,8 +181,14 @@ footer {
     background-color: #dbc0c493;
     color: black;
     position: fixed;
-    bottom: 0;
+    bottom: -125px;
     width: 100%;
     clear: both;
     margin-top: auto;
+    transition: bottom 0.5s ease-in-out;
+}
+
+body:hover footer,
+body:hover #marcas {
+    bottom: 0;
 }

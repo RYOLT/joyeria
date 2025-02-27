@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1 id="makup"">Makup E-Commerce</h1>
+        <h1 id="makup"">JOYERIA YOLTZIN</h1>
         <div>
             <nav>
                 <ul>
@@ -137,5 +137,31 @@
         </div>
 
         <footer>@Copyright</footer>
+
+        <script>
+            // Detectar el evento de scroll
+            window.onscroll = function() {
+                mostrarElementos();
+            };
+        
+            function mostrarElementos() {
+                // Obtener la posición actual del scroll
+                let scrollPosition = window.scrollY || document.documentElement.scrollTop;
+        
+                // Definir los elementos
+                let footer = document.querySelector('footer');
+                let marcas = document.getElementById('marcas');
+        
+                // Si el usuario ha hecho scroll hacia abajo, mostrar los elementos
+                if (scrollPosition > 1500) {  // Ajusta el valor según tus necesidades
+                    footer.style.bottom = "0";
+                    marcas.style.bottom = "0";
+                } else {
+                    footer.style.bottom = "-125px";  // Ocultar los elementos
+                    marcas.style.bottom = "-125px";  // Ocultar los elementos
+                }
+            }
+        </script>
+        
     </body>
 </html>
